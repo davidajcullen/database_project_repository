@@ -321,7 +321,7 @@ insert into playerTable(player_id, first_name, surname, position, club, date_of_
 ("0309", "Nedum", "Onuoha", "Defender", "Queens Park Rangers", "1986-11-12", "England", null),
 ("0310", "Richard", "Dunne", "Defender", "Queens Park Rangers", "1979-09-21", "Rep. of Ireland", "Rep. of Ireland"),
 ("0311", "Matt", "Phillips", "Midfielder", "Queens Park Rangers", "1991-03-13", "England", "Scotland"),
-("0312", "NULL", "Sandro", "Midfielder", "Queens Park Rangers", "1989-03-15", "Brazil", "Brazil"),
+("0312", "Frankie", "Sutherland", "Midfielder", "Queens Park Rangers", "1993-12-06", "Rep. of Ireland", null),
 ("0313", "Joey", "Barton", "Midfielder", "Queens Park Rangers", "1982-09-02", "England", "England"),
 ("0314", "Leroy", "Fer", "Midfielder", "Queens Park Rangers", "1990-01-05", "Netherlands", "Netherlands"),
 ("0315", "Shaun", "Wright-Phillips", "Midfielder", "Queens Park Rangers", "1981-10-25", "England", "England"),
