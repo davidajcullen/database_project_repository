@@ -1,15 +1,14 @@
-DROP TABLE IF EXISTS user;
-DROP TABLE IF EXISTS fantasyTeam;
+DROP TABLE IF EXISTS awayTeam;
+DROP TABLE IF EXISTS homeTeam;
+DROP TABLE IF EXISTS playsIn;
+DROP TABLE IF EXISTS squad;
+DROP TABLE IF EXISTS fantasyTeamLeague;
+DROP TABLE IF EXISTS fixture;
 DROP TABLE IF EXISTS fantasyLeague;
+DROP TABLE IF EXISTS fantasyTeam;
+DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS player;
 DROP TABLE IF EXISTS club;
-DROP TABLE IF EXISTS fixture;
-
-DROP TABLE IF EXISTS fantasyTeamLeague;
-DROP TABLE IF EXISTS squad;
-DROP TABLE IF EXISTS playsIn;
-DROP TABLE IF EXISTS homeTeam;
-DROP TABLE IF EXISTS awayTeam;
 
 CREATE TABLE user (
   user_id VARCHAR (15) NOT NULL,
@@ -61,13 +60,9 @@ CREATE TABLE player (
 CREATE TABLE fantasyTeam (
   team_id VARCHAR (15) NOT NULL,
   team_name VARCHAR (40) NULL,
-  player_id VARCHAR (20) NOT NULL,
   user_id VARCHAR (15) NOT NULL,
-  game_week VARCHAR (5) NOT NULL, 
   PRIMARY KEY (team_id),
   INDEX (team_id),
-  FOREIGN KEY (player_id)
-    REFERENCES player (player_id),
   FOREIGN KEY (user_id)
     REFERENCES user (user_id)
 );
@@ -87,6 +82,7 @@ CREATE TABLE squad (
   team_id VARCHAR (15) NOT NULL,
   player_id VARCHAR (15) NOT NULL,
   first_team BOOLEAN NOT NULL DEFAULT 0,
+  game_week VARCHAR (5) NOT NULL, 
   PRIMARY KEY (team_id),
   FOREIGN KEY (team_id)
     REFERENCES fantasyTeam (team_id),
