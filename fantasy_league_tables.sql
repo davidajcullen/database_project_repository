@@ -46,11 +46,11 @@ CREATE TABLE player (
   player_id VARCHAR (15) NOT NULL,
   first_name VARCHAR (20) NULL,
   last_name VARCHAR (20) NULL,
-  d_o_b DATE NULL,
   position VARCHAR (15) NULL,
+  club_id VARCHAR (15) NOT NULL,
+  d_o_b DATE NULL,
   country_of_birth VARCHAR (40) NULL,
   national_team VARCHAR (40) NULL,
-  club_id VARCHAR (15) NOT NULL,
   PRIMARY KEY (player_id),
   INDEX (player_id),
   FOREIGN KEY (club_id)
