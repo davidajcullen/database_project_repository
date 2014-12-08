@@ -69,7 +69,6 @@ CREATE TABLE fantasyTeam (
 CREATE TABLE fantasyTeamLeague (
   team_id VARCHAR (15) NOT NULL,
   league_id VARCHAR (15) NOT NULL,
-  game_week VARCHAR (5) NOT NULL,
   PRIMARY KEY (team_id, league_id),
   FOREIGN KEY (team_id)
     REFERENCES fantasyTeam (team_id),
