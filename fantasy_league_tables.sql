@@ -103,7 +103,7 @@ CREATE TABLE homeTeam (
   fixture_id VARCHAR (15) NOT NULL,
   club_name VARCHAR (30) NOT NULL,
   goals VARCHAR (5) NOT NULL,
-  venue VARCHAR (15) NULL,
+  venue VARCHAR (30) NULL,
   PRIMARY KEY (fixture_id),
   FOREIGN KEY (fixture_id)
     REFERENCES fixture (fixture_id),
