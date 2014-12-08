@@ -9,7 +9,7 @@ insert into club (club_name, club_manager, club_ground) values
 ("Leicester City", "Nigel Pearson", "King Power Stadium"),
 ("Liverpool", "Brendan Rogers", "Anfield"),
 ("Manchester City", "Manuel Pellegrini", "City of Manchester Stadium"),
-("Manchester United", "Louis van Gaal" "Old Trafford"),
+("Manchester United", "Louis van Gaal", "Old Trafford"),
 ("Newcastle United", "Alan Pardew", "St James' Park"),
 ("Queens Park Rangers", "Harry Redknapp", "Loftus Road"),
 ("Southampton", "Ronald Koeman", "St Mary's Stadium"),
