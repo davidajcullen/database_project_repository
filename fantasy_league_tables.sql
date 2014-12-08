@@ -27,12 +27,11 @@ CREATE TABLE fantasyLeague (
 );
 
 CREATE TABLE club (
-  club_id VARCHAR (15) NOT NULL,
-  club_name VARCHAR (30) NULL,
+  club_name VARCHAR (30) NOT NULL,
   club_manager VARCHAR (40) NULL,
   club_ground VARCHAR (30) NULL,
-  PRIMARY KEY (club_id),
-  INDEX (club_id)
+  PRIMARY KEY (club_name),
+  INDEX (club_name)
 );
 
 CREATE TABLE fixture (
@@ -47,14 +46,14 @@ CREATE TABLE player (
   first_name VARCHAR (20) NULL,
   last_name VARCHAR (20) NULL,
   position VARCHAR (15) NULL,
-  club_id VARCHAR (15) NOT NULL,
+  club_name VARCHAR (30) NOT NULL,
   d_o_b DATE NULL,
   country_of_birth VARCHAR (40) NULL,
   national_team VARCHAR (40) NULL,
   PRIMARY KEY (player_id),
   INDEX (player_id),
-  FOREIGN KEY (club_id)
-    REFERENCES club (club_id)
+  FOREIGN KEY (club_name)
+    REFERENCES club (club_name)
 );
 
 CREATE TABLE fantasyTeam (
@@ -103,23 +102,23 @@ CREATE TABLE playsIn (
 
 CREATE TABLE homeTeam (
   fixture_id VARCHAR (15) NOT NULL,
-  club_id VARCHAR (15) NOT NULL,
+  club_name VARCHAR (30) NOT NULL,
   goals VARCHAR (5) NOT NULL,
   venue VARCHAR (15) NULL,
   PRIMARY KEY (fixture_id),
   FOREIGN KEY (fixture_id)
     REFERENCES fixture (fixture_id),
-  FOREIGN KEY (club_id)
-    REFERENCES club (club_id)
+  FOREIGN KEY (club_name)
+    REFERENCES club (club_name)
 );
 
 CREATE TABLE awayTeam (
   fixture_id VARCHAR (15) NOT NULL,
-  club_id VARCHAR (15) NOT NULL,
+  club_name VARCHAR (30) NOT NULL,
   goals VARCHAR (5) NOT NULL,
   PRIMARY KEY (fixture_id),
   FOREIGN KEY (fixture_id)
     REFERENCES fixture (fixture_id),
-  FOREIGN KEY (club_id)
-    REFERENCES club (club_id)
+  FOREIGN KEY (club_name)
+    REFERENCES club (club_name)
 );
