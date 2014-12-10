@@ -1,4 +1,4 @@
-insert into squad (team_id, player_id, first_team, game_week) values
+insert into squad (team_id, player_id, in_first_team, game_week) values
 ("t001", "0026", 1, "g01"),
 ("t001", "0008", 1, "g01"),
 ("t001", "0406", 1, "g01"),

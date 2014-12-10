@@ -79,7 +79,7 @@ CREATE TABLE fantasyTeamLeague (
 CREATE TABLE squad (
   team_id VARCHAR (15) NOT NULL,
   player_id VARCHAR (15) NOT NULL,
-  first_team BOOLEAN NOT NULL DEFAULT 0,
+  in_first_team BOOLEAN NOT NULL DEFAULT 0,
   game_week VARCHAR (5) NOT NULL, 
   PRIMARY KEY (team_id, player_id, game_week),
   FOREIGN KEY (team_id)
@@ -824,7 +824,7 @@ insert into fantasyTeamLeague (team_id, league_id) values
 
 
 
-insert into squad (team_id, player_id, first_team, game_week) values
+insert into squad (team_id, player_id, in_first_team, game_week) values
 ("t001", "0026", 1, "g01"),
 ("t001", "0008", 1, "g01"),
 ("t001", "0406", 1, "g01"),
