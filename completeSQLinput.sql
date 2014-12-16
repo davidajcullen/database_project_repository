@@ -775,18 +775,18 @@ insert into player(player_id, first_name, last_name, position, club_name, d_o_b,
 
 
 insert into fantasyTeam (team_id, team_name, user_id) values
-("t001", "Kevin Team 1", "0001"),
-("t002", "Ciaran Team 1", "0002"),
-("t003", "Liam Team 1", "0003"),
-("t004", "Fergus Team 1", "0004"),
-("t005", "Peter Team 1", "0005"),
-("t006", "David Team 1", "0006"),
-("t007", "Kevin Team 2", "0007"),
-("t008", "Ciaran Team 2", "0008"),
-("t009", "Liam Team 2", "0009"),
-("t010", "Fergus Team 2", "0010"),
-("t011", "Peter Team 2", "0011"),
-("t012", "David Team 2", "0012");
+("t001", "Chap O Chinos", "0001"),
+("t002", "Team Zimmer", "0002"),
+("t003", "Prestige Worldwide", "0003"),
+("t004", "Spaceballs", "0004"),
+("t005", "--nocomment", "0005"),
+("t006", "Al Gore Rhythyms", "0006"),
+("t007", "EIEIO", "0007"),
+("t008", "Black Mesa", "0008"),
+("t009", "ExJavaGanza", "0009"),
+("t010", "SQL like a Pig", "0010"),
+("t011", "Java lot of Turbines", "0011"),
+("t012", "Can't Group This", "0012");
 
 
 
